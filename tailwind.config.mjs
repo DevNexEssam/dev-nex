@@ -1,3 +1,4 @@
+/* eslint-disable import/no-anonymous-default-export */
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
@@ -8,8 +9,11 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        main_color: "#8750f7",
+        primary_color: "#FFFFFF",
+        secondary_color: "#DDDDDD",
+        bg_main : "#0E0F0F",
+        bg_alt : "#101111",
       },
     },
   },
