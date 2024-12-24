@@ -12,7 +12,7 @@ const SideBar = () => {
     setOpen(!open)
   }
   return (
-    <div className=" bg-bg_alt px-[20px] py-[20px] rounded-full fixed left-5 top-16">
+    <div className=" bg-bg_alt px-[20px] py-[20px] rounded-full fixed left-5 top-16 z-40">
       <span onClick={handleOpen} className={!open ? "block text-white text-[25px] mx-auto cursor-pointer" : "block text-white text-[25px] mx-auto cursor-pointer mb-6"}>
         {!open ? <IoMenuSharp /> : <IoClose />}
       </span>

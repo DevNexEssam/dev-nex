@@ -25,14 +25,18 @@ body {
   /* position: sticky; */
 }
 
+section {
+  position: relative;
+  padding: 50px 0;
+}
+
 .circle {
-  transform: translate(-50%, -50%);
   position: absolute;
-  width: 2px;
-  height: 2px;
+  width: .5px;
+  height: .5px;
   border-radius: 10%;
   background-color: transparent;
-  box-shadow: 200px 200px 200px 200px #2f0d72;
+  box-shadow: 0 200px 200px 200px #2f0d72;
   z-index: -1;
   animation: light 15s ease-in-out infinite;
 }
