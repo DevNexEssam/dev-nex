@@ -22,7 +22,7 @@ const WorkCard = ({ title, desc, image, demo, code }) => {
         className="rounded-xl"
       />
       <div className="mt-2 p-[20px] rounded-[20px] transition ease-in-out delay-150 bg-transparent hover:-translate-y-1 hover:scale-110 hover:bg-main_color/80 duration-300">
-        <div className="flex justify-between items-center">
+        <div className="flex gap-5 justify-between items-center">
           <h1 className="text-white text-[20px] font-bold capitalize md:text-[30px]">
             {title}
           </h1>
