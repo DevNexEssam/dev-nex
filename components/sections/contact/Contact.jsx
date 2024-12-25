@@ -11,7 +11,7 @@ export default function Contact() {
         Aos.init();
       }, []);
   return (
-    <section id="contact" className="py-[120px]">
+    <section id="contact" className="py-[50px]">
       <div className="circle top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"></div>
       <TitleSections title="Contact Us" />
       <div className="container">

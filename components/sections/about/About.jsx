@@ -89,10 +89,10 @@ const About = () => {
               </div>
             </div>
             <div className="rounded-[20px] p-[30px] bg-bg_alt">
-              <div className="flex gap-4 items-center">
+              <div className="flex flex-col gap-4 items-center md:flex-row">
                 <Link
                   href="/"
-                  className=" flex gap-2 items-center text-primary_color text-[15px] font-bold capitalize bg-main_color px-[30px] py-[15px] rounded-[10px] hover:bg-main_color/50"
+                  className=" flex gap-2 items-center text-primary_color text-[14px] font-bold capitalize bg-main_color px-[30px] py-[15px] rounded-[10px] hover:bg-main_color/50"
                 >
                   <span>
                     <IoMdDownload />
@@ -101,7 +101,7 @@ const About = () => {
                 </Link>
                 <Link
                   href="/"
-                  className="capitalize border text-primary_color text-[15px] font-bold border-main_color px-[30px] py-[15px] rounded-[10px] hover:bg-main_color"
+                  className="capitalize border text-primary_color text-[14px] font-bold border-main_color px-[30px] py-[15px] rounded-[10px] hover:bg-main_color"
                 >
                   View Projects
                 </Link>
