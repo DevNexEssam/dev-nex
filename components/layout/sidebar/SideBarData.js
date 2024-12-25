@@ -1,4 +1,3 @@
-import { FaHome } from "react-icons/fa";
 import { MdWindow } from "react-icons/md";
 import { FaUser } from "react-icons/fa";
 import { FaCode } from "react-icons/fa";

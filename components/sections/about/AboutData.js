@@ -6,10 +6,11 @@ import { FaInstagram } from "react-icons/fa6";
 export const INFO_DATA = [
     {
         id : 0,
+        photo : "/profile.png",
         name : "essam mohamed",
         role : "web developer",
         location : "Alex, egypt",
-        bio : "Front-End Developer | Next.js, React.js, Tailwind CSS | Creating amazing web experiences."
+        bio : "Front-End Developer | Next.js, React.js, Tailwind CSS  Creating amazing web experiences."
     }
 ]
 
