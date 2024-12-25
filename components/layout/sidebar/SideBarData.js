@@ -6,25 +6,25 @@ export const SIDEBAR_LINKS = [
     {
         id : 0,
         label : "services",
-        path : "/services",
+        path : "#services",
         icon : <MdWindow />
     },
     {
         id : 1,
         label : "portfolio",
-        path : "/portfolio",
+        path : "#portfolio",
         icon : <FaCode />
     },
     {
         id : 2,
         label : "about",
-        path : "/about",
+        path : "#about",
         icon : <FaUser />
     },
     {
         id : 3,
         label : "contact",
-        path : "/contact",
+        path : "#contact",
         icon : <BiSolidMessageRoundedDots />
     },
 ]

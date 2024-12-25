@@ -7,7 +7,7 @@ import Link from "next/link";
 
 const About = () => {
   return (
-    <section className="">
+    <section id="about">
       <div className="container">
         <TitleSections title="about me" />
         <div className="flex flex-col items-center justify-center gap-10 lg:flex-row">

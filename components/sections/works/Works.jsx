@@ -4,7 +4,7 @@ import WorkCard from "./WorkCard"
 
 const Works = () => {
   return (
-    <section className="">
+    <section id="portfolio" className="">
       <div className="circle top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"></div>
         <div className="container">
         <TitleSections title="My Latest Creations" />

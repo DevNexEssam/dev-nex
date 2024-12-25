@@ -9,8 +9,10 @@ export const INFO_DATA = [
         photo : "/profile.png",
         name : "essam mohamed",
         role : "web developer",
-        location : "Alex, egypt",
-        bio : "Front-End Developer | Next.js, React.js, Tailwind CSS  Creating amazing web experiences."
+        bio : "Front-End Developer | Next.js, React.js, Tailwind CSS  Creating amazing web experiences.",
+        location : "https://maps.app.goo.gl/bn5ZQofPMxJimGhX9",
+        phone : "tel:+20 1068446885",
+        gmail : "mailto:essam.mohamed.dev@gmail.com"
     }
 ]
 
