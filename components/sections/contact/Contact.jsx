@@ -1,17 +1,24 @@
+"use client";
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 import { FaEnvelope, FaPhoneAlt } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
 import TitleSections from "@/components/ui/title-section/TitleSections";
 
 export default function Contact() {
+      useEffect(() => {
+        Aos.init();
+      }, []);
   return (
-    <section id="contact">
+    <section id="contact" className="py-[120px]">
       <div className="circle top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"></div>
       <TitleSections title="Contact Us" />
       <div className="container">
         {/* DATA */}
         <div className=" mt-16 grid grid-rows-1 lg:grid-cols-2 gap-10 items-center">
           {/* LEFT */}
-          <div className="grid grid-cols-1 justify-center md:grid-cols-1 items-center gap-5">
+          <div className="grid grid-cols-1 justify-center md:grid-cols-1 items-center gap-5" data-aos= 'fade-up-right'>
             <div className=" flex gap-3 items-center bg-bg_alt p-[15px] md:w-[100%] overflow-hidden py-[25px] px-[15px] rounded-[15px] hover:bg-main_color">
               <FaEnvelope className="text-[30px] text-primary_color" />
               <span className="block p-0 text-secondary_color">
@@ -32,7 +39,7 @@ export default function Contact() {
             </div>
           </div>
           {/* RIGHT */}
-          <div>
+          <div data-aos= 'fade-up-left'>
             <form
               action="/"
               className="bg-bg_alt p-[20px] rounded-[10px] flex flex-col gap-5"

@@ -4,7 +4,7 @@ import { SERVICES_DATA } from "./ServicesData"
 
 const Services = () => {
   return (
-    <section id="services" className="bg-bg_main">
+    <section id="services" className="bg-bg_main py-[120px]">
         <div className="container">
         <TitleSections title="Our Premium Services" />
         <div className="grid grid-cols-1 gap-5 md:grid-cols-2">

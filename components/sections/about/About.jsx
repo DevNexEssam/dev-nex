@@ -1,3 +1,7 @@
+"use client";
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 import TitleSections from "@/components/ui/title-section/TitleSections";
 import { IoMdDownload } from "react-icons/io";
 import { FaCode } from "react-icons/fa";
@@ -6,13 +10,16 @@ import Image from "next/image";
 import Link from "next/link";
 
 const About = () => {
+    useEffect(() => {
+      Aos.init();
+    }, []);
   return (
     <section id="about">
       <div className="container">
         <TitleSections title="about me" />
         <div className="flex flex-col items-center justify-center gap-10 lg:flex-row">
           {/* LEFT */}
-          <div className="w-[300px] h-full bg-bg_alt rounded-[20px] p-[30px] md:w-[400px] sm:w-[400px] mx-auto">
+          <div className="w-[300px] h-full bg-bg_alt rounded-[20px] p-[30px] md:w-[400px] sm:w-[400px] mx-auto" data-aos= 'fade-up-right'>
             {INFO_DATA.map((item) => (
               <div key={item.id}>
                 <div className="border-container">
@@ -47,7 +54,7 @@ const About = () => {
             </div>
           </div>
           {/* RIGHT */}
-          <div className="flex flex-col justify-between gap-5 w-full ">
+          <div className="flex flex-col justify-between gap-5 w-full" data-aos= 'fade-up-left'>
             {/* TOP */}
             <div className="rounded-[20px] p-[30px] bg-bg_alt">
               <div className="mt-5">
