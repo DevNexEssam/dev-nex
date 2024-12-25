@@ -1,7 +1,8 @@
 "use client";
 import { LiaDownloadSolid } from "react-icons/lia";
 import Link from "next/link";
-import Typewriter from "typewriter-effect";
+import { ReactTyped } from 'react-typed';
+
 
 const Hero = () => {
   return (
@@ -14,19 +15,18 @@ const Hero = () => {
             I am Essam
           </h3>
           <h1 className="text-[40px] sm:text-[50px] lg:text-[100px] font-bold text-transparent bg-clip-text bg-gradient-to-r from-main_color to-main_color/40 drop-shadow-lg">
-            <Typewriter
-              options={{
-                strings: [
-                  "Web Developer",
-                  "Frontend Developer",
-                  "Next.js Specialist",
-                  "Tailwind CSS Enthusiast",
-                ],
-                autoStart: true,
-                loop: true,
-                delay: 100,
-                cursor: "|",
-              }}
+            <ReactTyped
+              strings={[
+                "Web Developer",
+                "Frontend Developer",
+                "Next.js Specialist",
+                "Tailwind CSS Enthusiast",
+              ]}
+              typeSpeed={100}
+              backSpeed={50}
+              backDelay={2000}
+              startDelay={500}
+              loop
             />
           </h1>
           <h3 className="text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px] text-secondary_color max-w-[90%] md:max-w-[800px] mt-5">
@@ -34,7 +34,7 @@ const Hero = () => {
             deliver seamless and user-focused experiences that enhance web
             interactions.
           </h3>
-          
+
           {/* Action Button */}
           <div className="mt-10 flex justify-center">
             <Link
