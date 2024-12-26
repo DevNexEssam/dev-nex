@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer className="bg-bg_alt py-8">
       <div className="container">
-        <div className="flex flex-col justify-between items-center md:flex-col">
+        <div className="flex flex-col gap-3 justify-between items-center md:flex-row">
           <div className="text-primary_color">
             <h1>Copyright © 2024 Essam Mohamed. All Rights Reserves</h1>
           </div>

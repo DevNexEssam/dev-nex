@@ -8,7 +8,7 @@ const CardService = ({ title, desc, num }) => {
     Aos.init();
   },[])
   return (
-    <div className="bg-bg_alt px-6 sm:px-8 md:px-[50px] py-[20px] sm:py-[30px] rounded-[25px]" data-aos= 'fade-up'>
+    <div className="bg-bg_alt px-6 sm:px-8 md:px-[50px] py-[20px] sm:py-[30px] border border-transparent rounded-[25px] hover:border-main_color" data-aos= 'fade-up'>
       <span className="px-[15px] sm:px-[20px] py-1 sm:py-2 text-[14px] sm:text-[18px] text-main_color rounded-lg border border-main_color font-bold">
         {num}
       </span>

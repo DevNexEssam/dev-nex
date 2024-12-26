@@ -5,7 +5,7 @@ import { useEffect } from "react";
 import TitleSections from "@/components/ui/title-section/TitleSections";
 import { IoMdDownload } from "react-icons/io";
 import { FaCode } from "react-icons/fa";
-import { INFO_DATA, INFO_LINKS } from "./AboutData";
+import { INFO_DATA, INFO_LINKS, SKILLS_DATA } from "./AboutData";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -68,7 +68,7 @@ const About = () => {
                 <h1 className="text-[#71717A] text-[20px] font-bold uppercase">
                   Crafting seamless experiences with precision and creativity.
                 </h1>
-                <p className="text-[17px] text-secondary_color mt-10">
+                <p className="text-[17px] text-secondary_color mt-5">
                   I specialize in creating immersive digital experiences that
                   seamlessly blend stunning design with powerful functionality.
                   Every detail, from the layout to the interactions, is
@@ -78,7 +78,16 @@ const About = () => {
                   and performance.
                 </p>
 
-                <div className="flex gap-3 items-center mt-10">
+                {/* SKILLS */}
+                <div className="flex flex-wrap items-center gap-5 mt-5">
+                  {SKILLS_DATA.map((item) => (
+                    <span key={item.id} className="text-white text-[25px] border border-main_color/25 p-2 rounded-md hover:bg-main_color">
+                      {item.icon}
+                    </span>
+                  ))}
+                </div>
+
+                <div className="flex gap-3 items-center mt-5">
                   <span className="text-main_color">
                     <FaCode />
                   </span>
